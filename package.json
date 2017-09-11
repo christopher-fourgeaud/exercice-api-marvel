@@ -1,0 +1,25 @@
+{
+  "name": "exercice-api-marvel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopher-fourgeaud/exercice-api-marvel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christopher-fourgeaud/exercice-api-marvel/issues"
+  },
+  "homepage": "https://github.com/christopher-fourgeaud/exercice-api-marvel#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "list.js": "^1.5.0",
+    "list.pagination.js": "^0.1.1"
+  }
+}
