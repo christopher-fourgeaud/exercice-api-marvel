@@ -15,8 +15,13 @@ $(".letter").click(function(){
             console.log(data.data);
             $("#liste-hero").html("");
             for (var i = 0; i < data.data.results.length; i++) {
-                $("#liste-hero").append("<tr><td >"+data.data.results[i].id+"</td><td>"+data.data.results[i].name+"</td><td><img class='thumbnail'src='"+data.data.results[i].thumbnail.path+"."+data.data.results[i].thumbnail.extension +"'></td><td>"+data.data.results[i].description+"</td><td>"+data.data.results[i].comics.available+"</td><td>"+data.data.results[i].stories.available+"</td><td>"+data.data.results[i].series.available+"</td></tr>")  ;          
+                $("#liste-hero").append("<tr class='hero'><td >"+data.data.results[i].id+"</td><td>"+data.data.results[i].name+"</td><td><img class='thumbnail'src='"+data.data.results[i].thumbnail.path+"."+data.data.results[i].thumbnail.extension +"'></td><td>"+data.data.results[i].description+"</td><td>"+data.data.results[i].comics.available+"</td><td>"+data.data.results[i].stories.available+"</td><td>"+data.data.results[i].series.available+"</td></tr>")  ;          
             }
+            new List('test-list', {
+                valueNames: ['hero'],
+                page: 5,
+                pagination: true
+            });
         },error: function(){
             alert("Echec de la connexion !");
         }
