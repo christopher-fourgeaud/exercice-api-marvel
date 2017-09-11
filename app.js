@@ -1,6 +1,6 @@
 var alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 
-for (var i = 0; i < 25; i++) {
+for (var i = 0; i < 26; i++) {
     $("#ici").append("<button id='" +alphabet[i]+ "'class='btn btn-primary letter'>"+alphabet[i]+"</button>");
     
 }
